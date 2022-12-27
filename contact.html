@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/993fb9dcc0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/contact.css">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="icon" href="style/images/contact .png">
+    <title>Contact Us</title>
+</head>
+<body>
+    <div class="background">
+        <nav>
+          <h2 class="navext"><a href="index.html">FURNITURE<span>.com</span></a></h2>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="service.html">SERVICE</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+           
+        </nav>
+        <form action="https://formsubmit.co/c7dbca01f4608f9fc6d8a6b9709f1db9" method="POST">
+            <!-- Honeypot -->
+            <input type="text" name="_honey" style="display: none;">
+            <!-- Disable captcha -->
+            <input type="hidden" name="_captcha" value="false">
+            <!-- Disable success page -->
+            <input type="hidden" name="_next" value="ap0llone.github.io/furniturewebsite/">
+            <div class="container">
+        <div class="box" name=""name>
+            <h3>Get in Touch</h3>
+            <div class="name" name="name">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Name" id="name" name="Name">
+            </div>
+            <div class="email" name="email">
+                <i class="fas fa-envelope"></i>
+                <input type="text" placeholder="Email" id="email" name="Email">
+            </div>
+            <div class="message-box" name=""message-box>
+                <textarea id="msg" cols="30" rows="10" placeholder="Message" name="Message"></textarea>
+            </div>
+            <div class="button">
+                <button id="send" onclick="message()">Send</button>
+            </div>
+            <div class="message">
+                <div class="success" id="success">Your Message Successfully Sent!</div>
+                <div class="danger" id="danger">Feilds Can't be Empty!</div>
+            </div>
+        </div>
+    </div>
+</form>
+    <script src="script/main.js"></script>
+
+</html>

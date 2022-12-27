@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #011515;
+}
+.background h2{
+    color: #000;
+    margin-left: 40px;
+}
+.background a{
+    text-decoration: none;
+    color: #fff;
+}
+span{
+    color: #30d5c8;
+}
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    background-color: #000;
+}
+nav .logo{
+    width: 50px;
+    margin-left: 20px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 5px; 
+}
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    border-radius: 2px;
+    padding: 7px 13px;
+    text-transform: uppercase;
+    margin-right: 20px ;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    height: 1px;
+    width: 0;
+    background: #30d5c8;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+ .title h2{
+     color: #efefef;
+     font-size: 75px;
+     width: 1130px;
+     margin: 30px auto;
+     text-align: center;
+  
+ }
+ .box {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 400px;
+     margin-top: 100px;
+ }
+ .card{
+     height: 365px;
+     width: 335px;
+     padding: 20px 35px;
+     background: #010e0e;
+     border-radius: 20px;
+     margin: 15px;
+     position: relative;
+     overflow: hidden;
+     text-align: center;
+ }
+ .card:hover {
+  background-color: #021b1c;
+  opacity: .7;
+ }
+ .card i{
+     font-size: 50px;
+     display: block;
+     text-align: center;
+     margin: 25px 0px;
+     color: #30d5c8;
+ }
+ h5{
+     color: white;
+     font-size: 23px;
+     margin-bottom: 15px;
+ }
+ .pra p{
+     color: #efefef;
+     font-size: 16px;
+     line-height: 27px;
+     margin-bottom: 30px;
+ }
+ .button-card{
+     color: #efefef;
+     border-radius: 2px;
+     border: none;
+     background: #30d5c8;
+     border: 2px solid #30d5c8;
+     padding: 12px 40px;
+     padding: 12px 40px;
+     font-weight: bold;
+     transition: .4s;
+ }
+ .button-card:hover{
+     cursor: pointer;
+     background-color: transparent;
+     border: 2px solid #30d5c8;
+ }
+ 
+ 
+ 
+@media screen and (max-width: 768px){
+    nav ul li a{
+        text-decoration: none;
+        color: #000;
+        font-size: 9px;
+        border-radius: 2px;
+        padding: 7px 13px;
+        text-transform: uppercase;
+        margin-right: 20px ;
+        position: relative;
+      
+    }
+    .background h2{
+        font-size: 15px;
+    }
+    nav ul li{
+        list-style: none;
+        display: block;
+        margin: 0 5px; 
+        padding: 1px;
+    }
+    nav ul li a::after{
+        content: '';
+        height: -2px;
+        width: 0;
+        background: #30d5c8;
+        position: absolute;
+        left: 0;
+        bottom: 5px;
+        transition: 0.5s;
+    }
+    nav ul li a:hover::after{
+        width: 100%;
+    }
+    .box {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        min-height: 400px;
+        margin-top: 100px;
+    }
+    .card{
+        height: 100%;
+        width: 100%;
+        padding: 20px 35px;
+        background: #010e0e;
+        border-radius: 20px;
+        margin: 15px;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+    }
+    h5{
+        color: white;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .pra p{
+        color: #efefef;
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom: 30px;
+    }
+    .button-card{
+        color: #efefef;
+        border-radius: 2px;
+        border: none;
+        background: #30d5c8;
+        border: 2px solid #30d5c8;
+        padding: 12px 40px;
+        font-size: 12px;
+        font-weight: bold;
+        transition: .4s;
+    }
+}
